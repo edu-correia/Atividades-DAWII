@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/01dde3cf5b.js" crossorigin="anonymous"></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jQuery/jquery.mask.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/pagamento.css">
+    <title>Pagamento | Lojinha</title>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#cpf").mask("000.000.000-00");
+        $("#rg").mask("00.000.000-A");
+        $("#cvv").mask("000");
+        $("#fone").mask("(00) 00000-0000");
+        $("#vencimento").mask("00/00");
+    })
+</script>
+
+<body>
+    <header>
+        <a href="./carrinho.html">
+            <i class="fas fa-arrow-left"></i>
+            <p>Voltar</p>
+        </a>
+
+        <h1>Lojinha</h1>
+    </header>
+
+    <fieldset> 
+        <legend>Dados para pagamento</legend>
+        
+        <div class="field">
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="field">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+        </div>
+
+        <div class="field">
+            <label for="rg">RG:</label>
+            <input type="text" name="rg" id="rg"> 
+        </div>
+
+        <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"> 
+        </div>
+
+        <div class="field">
+            <label for="cvv">Código CVV:</label>
+            <input type="text" name="cvv" id="cvv">
+        </div>
+
+        <div class="field">
+            <label for="fone">Telefone:</label>
+            <input type="text" name="fone" id="fone">
+        </div>
+
+        <div class="field">
+            <label for="vencimento">Mês e ano de vencimento:</label>
+            <input type="text" name="vencimento" id="vencimento"> 
+        </div>
+
+        <section>
+            <div>
+                <div id="err-alert">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Campo <b id="wrong">NOME</b> não foi preenchido corretamente.
+                </div>
+            </div>
+            <button onclick="verify()">Concluir</button>
+        </section>
+    </fieldset>
+
+    <script src="./javascript/verifyFormData.js"></script>
+</body>
+</html>

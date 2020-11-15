@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <script src="https://kit.fontawesome.com/01dde3cf5b.js" crossorigin="anonymous"></script>
+    
+    <title>Início | Lojinha</title>
+</head>
+<body>
+    <header>
+        <h1>Lojinha</h1>
+        <div>
+            <input type="text" placeholder="Pesquisar..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <a href="./carrinho.html" class="carrinho">
+            <p>Carrinho</p>
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/hamburguer.png" alt="Hambúrguer">
+            </div>
+            <div class="produto-detalhes">
+                <h2>Hambúrguer</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(0)">Comprar R$22,50</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/tenis.png" alt="Tenis">
+            </div>
+            <div class="produto-detalhes">
+                <h2>Tênis</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(1)">Comprar R$130,00</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/iphone.png" alt="iPhone">
+            </div>
+            <div class="produto-detalhes">
+                <h2>iPhone</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(2)">Comprar R$6500,00</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/pizza.png" alt="Pizza">
+            </div>
+            <div class="produto-detalhes">
+                <h2>Pizza</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(3)">Comprar R$29,90</button>
+            </div>
+        </div>
+
+        
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/airpods.png" alt="AirPods">
+            </div>
+            <div class="produto-detalhes">
+                <h2>AirPods</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(4)">Comprar R$1399,00</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/sapato.png" alt="Sapato">
+            </div>
+            <div class="produto-detalhes">
+                <h2>Sapato</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(5)">Comprar R$220,00</button>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./assets/headset.png" alt="Headset" />
+            </div>
+            <div class="produto-detalhes">
+                <h2>Headset</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla?</span>
+                <button onclick="addProduct(6)">Comprar R$89,90</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./javascript/addToCart.js"></script>
+</body>
+</html>
